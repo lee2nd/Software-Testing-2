@@ -4,7 +4,7 @@ import pytest
 from unittest import mock 
 from data_processor import process_and_store_data
 
-# 20-24 行是額外加的、process_and_store_data(4) 這個其實不必要，裡面放任何數字或文字都不影響 [1,2,3] 合起來是 6 的結果
+# 20-24 行是額外加的(不寫也沒差)、process_and_store_data(4) 裡面放任何數字或文字都不影響 [1,2,3] 合起來是 6 的結果
 
 @mock.patch('data_processor.Database')
 def test_process_and_store_data(MockDatabase):
